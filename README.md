@@ -1,4 +1,4 @@
-# CalcuZero, the simple calculator.
+# CalcuZero, the simple calculator
 
 Android development using JavasCript+HTML+CSS through Cordova proof of concept.
 The application choosen is a simple calculator with some extended functions.
