@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com https://fonts.googleapis.com https://fonts.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css ; media-src *; img-src 'self' data: content:; script-src 'self' 'unsafe-eval' https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/index.css">
+      
+
+        <title>Calcu</title>
+    </head>
+    <body>
+        <!--div class="app">
+            <h1>Apache Cordova</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+        </div-->
+        <div id="calc">
+            <div id="entry" class="form-control" contenteditable></div>
+            <div id="result"><p>0</p></div>
+            <div id="hco"><p></p>
+                <!--textarea class="form-control" rows="6" id="input1" name="input1"></textarea-->
+            </div>
+            <div id="keyboard">
+                <div class="row">
+                    <div class="bt2" value="sq">&radic;</div>
+                    <div class="bt2" value="x2">x<sup>2</sup></div>
+                    <div class="bt2" value="xy">x<sup>y</sup></div>
+                    <div class="bt2" value="pi">&pi;</div>
+                </div>
+                <div class="row">
+                    <div class="bt2" value="sgn">&plusmn;</div>
+                    <div class="bt2" value="inv">1/x</div>
+                    <div class="bt2" value="(">(</div>
+                    <div class="bt2" value=")">)</div>
+                </div>
+                <div class="row">
+                    <div class="bt3" value="ac">ac</div>
+                    <div class="bt3" value="bck">&lArr;</div>
+                    <div class="bt3" value="rst">rst</div>
+                    <div class="bt2" value="%">%</div>
+                </div>
+                <div class="row">
+                    <div class="bt1" value="7">7</div>
+                    <div class="bt1" value="8">8</div>
+                    <div class="bt1" value="9">9</div>
+                    <div class="bt2" value="/">/</div>
+                </div>
+                <div class="row">
+                    <div class="bt1" value="4">4</div>
+                    <div class="bt1" value="5">5</div>
+                    <div class="bt1" value="6">6</div>
+                    <div class="bt2" value="*">&cross;</div>
+                </div>
+                <div class="row">
+                    <div class="bt1" value="1">1</div>
+                    <div class="bt1" value="2">2</div>
+                    <div class="bt1" value="3">3</div>
+                    <div class="bt2" value="-">&minus;</div>
+                </div>
+                <div class="row">
+                    <div class="bt1" value="0">0</div>
+                    <div class="bt1" value=".">.</div>
+                    <div class="bt2" value="=">=</div>
+                    <div class="bt2" value="+">+</div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

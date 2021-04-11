@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.pmoronm.calcuzero" version="1.0.5" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>CalcuZero</name>
+    <description>
+        CalcuZero, the simple calculator.
+    </description>
+    <author email="pmoronm@gmail.com" href="http://cordova.io">
+        pmoronm
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+
+    <!--extra pmm + cordova plugin add cordova-plugin-navigationbar-color-->
+    <preference name="BackgroundColor" value="0x80000000" />
+    <preference name="NavigationBarBackgroundColor" value="#000000" />
+    <icon src="www/img/logo.png" />
+
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+</widget>
