@@ -36,7 +36,7 @@ $(document).ready(function () {
 
     function updateEntry(k='') {
         var k2='';
-        var entry0=$('#entry')[0].innerText;
+        var entry0=$('#entry1')[0].value;//innerText;
 
         switch (k) {
             case 'sq':
@@ -59,7 +59,7 @@ $(document).ready(function () {
                 k2='**(-1)';
                 break;
             case 'rst':
-                //clear history, no break linking later 'ac'
+                //clear history, no break goes on to 'ac'
                 $('#hco p')[0].innerText='';
             case 'ac':
                 entry0='';
@@ -92,7 +92,7 @@ $(document).ready(function () {
         } catch (err) {
         }
         if (k!='') {
-            $('#entry')[0].innerText = entry2;
+            $('#entry1')[0].value/*innerText*/ = entry2;
         }
         if (!wasOk) {
             resultErr='? ';
@@ -101,7 +101,7 @@ $(document).ready(function () {
     };
 
 
-    $("#entry").on('click input', function (e) {
+    $("#entry1").on('click input', function (e) {
         updateEntry();
     });
 

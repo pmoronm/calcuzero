@@ -37,18 +37,20 @@ body {
         width: 350px;
     }
 }
-@media screen and (min-height:670px) {
+/*@media screen and (min-height:670px) {
     #calc {
         height: 650px;
     }
-}
+}*/
 @media screen and (max-height:630px) {
     #calc {
-        height: 650px;
+        height: 630px;
     }
 }
 
 #entry {
+}
+#entry1 {
     background: #000000;
     border-color: #113311;
     color: #22aa22;
@@ -58,11 +60,11 @@ body {
     font-family: 'Segoe UI', monospace;
     overflow: auto;
     text-align: right;
-    line-height: 1.4;
+    /*line-height: 1.4;*/
     font-size: 1.6em;
 }
 
-#entry:focus {
+#entry1:focus {
     border-color: #113311;
     background: #162816;
 }
@@ -84,7 +86,7 @@ body {
     color: #22aa22;
     margin: 12px;
     text-align: right;
-    height: 120px; /*explorar el flexible*/
+    height: 100% ; /*120px;*/
     overflow: auto;
 }
 
@@ -94,7 +96,7 @@ body {
 }
 
 #keyboard {
-    position: absolute;
+    /*position: absolute;*/
     text-align: center;
     margin-bottom:12px;
     bottom: 12px;
